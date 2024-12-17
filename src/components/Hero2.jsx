@@ -2,9 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/variants";
 import TextSpan from "../utils/textSpan";
-import { FiDownload } from "react-icons/fi";
-import about from "../images/Georgie-About.png";
-import Cv from "../constants/CV-GiorgioFaini.pdf";
+import { NavLink } from "react-router-dom";
+import { FiDownload, FiEye } from "react-icons/fi";
+import about from "../images/Angelo-About.png";
+import Cv from "../constants/CV-AngeloBalagtas.pdf";
 
 const Hero2 = () => {
   const name = "About me.".split("");
@@ -22,7 +23,7 @@ const Hero2 = () => {
               whileInView={"show"}
               viewport={{ once: true, amount: 0.7 }}
               src={about}
-              alt="A fun vector image depicting Giorgio Faini working on his pc"
+              alt="A fun vector image depicting Angelo Balagtas in his corporate fit."
             />
           </div>
           {/*text-box*/}
@@ -51,29 +52,44 @@ const Hero2 = () => {
                 whileInView={"show"}
                 viewport={{ once: true, amount: 0.7 }}
               >
-                I am a constantly evolving web developer passionate about
-                designing captivating web solutions with great attention to
-                detail. I also enjoy developing 2d games and applications for
-                edutainment and gamification, blending creativity with
-                technology.
+                Hi, I'm Niño Angelo Balagtas, a Full Stack Software Engineer based in the Philippines. I specialize in building innovative and scalable web applications, and I’m deeply interested in areas such as AI/ML, Robotics, and IoT.
+                <br/><br/>
+                With a strong background in technologies such as React, Node.js, C#, and Express.js, I build both the front-end and back-end to create well-rounded, efficient applications. My expertise spans various databases including MsSQL and PostgreSQL, and I’m constantly exploring new tools to enhance my work, like TensorFlow, PyTorch, and scikit-learn libraries for AI/ML applications.
+                <br/><br/>
+                <NavLink to="/contacts">
+                  <span className="font-bold text-neutral-700 underline">I'm available for hire.</span>
+                </NavLink>
               </motion.p>
             </div>
-            {/*cv button*/}
+
+             {/* Buttons Side by Side */}
             <motion.div
-              className="px-5 py-2 mt-2 text-sm font-bold text-white uppercase border-b-4 rounded-full bg-vBtn bg-v hover:bg-vBtnHover border-vBtnHover hover:border-v"
+              className="flex gap-4 mt-2" // Side-by-side layout with gap
               variants={fadeIn("down", 0.3)}
               initial={"hidden"}
               whileInView={"show"}
               viewport={{ once: true, amount: 0.7 }}
             >
+              {/* Download CV Button */}
               <a
-                className="flex items-center gap-2"
+                className="px-5 py-2 text-sm font-bold text-white uppercase border-b-4 rounded-full bg-vBtn bg-v hover:bg-vBtnHover border-vBtnHover hover:border-v flex items-center gap-2"
                 href={Cv}
-                download="CV-GiorgioFaini"
+                download="CV-AngeloBalagtas"
                 rel="noopener noreferrer"
               >
                 <FiDownload size={20} />
-                <p className="font-semibold ">download cv</p>
+                <p className="font-semibold">Download CV</p>
+              </a>
+
+              {/* View CV Button */}
+              <a
+                className="px-5 py-2 text-sm font-bold text-white uppercase border-b-4 rounded-full bg-vBtn bg-v hover:bg-vBtnHover border-vBtnHover hover:border-v flex items-center gap-2"
+                href={Cv}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FiEye size={20} /> {/* Eye icon for View CV */}
+                <p className="font-semibold">View CV</p>
               </a>
             </motion.div>
           </div>

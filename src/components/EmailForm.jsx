@@ -96,7 +96,7 @@ const EmailForm = () => {
                 <textarea
                   name="message"
                   className="w-full p-5 mb-3 font-light rounded-lg md:h-48 placeholder:text-sm placeholder:opacity-80 placeholder:italic focus:outline-v "
-                  placeholder="What would you like to ask me?"
+                  placeholder="What would you like to inquire from me?"
                   rows={3}
                   required
                 />
