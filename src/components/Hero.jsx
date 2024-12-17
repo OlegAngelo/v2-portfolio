@@ -4,12 +4,12 @@ import { fadeIn } from "../utils/variants";
 import { Link } from "react-router-dom";
 import TextSpan from "../utils/textSpan";
 import { Typewriter } from "react-simple-typewriter";
-import avatar from "../images/Georgie-Home.png";
+import avatar from "../images/Angelo-Home.jpg";
 
 
 const Hero = () => {
   
-  const name = "Giorgio Faini".split("");
+  const name = "Angelo Balagtas".split("");
 
   return (
     <section>
@@ -19,12 +19,13 @@ const Hero = () => {
           {/*avatar*/}
             <div className=" w-[200px] md:w-[300px] lg:order-1 lg:w-[400px] xxl:w-[500px]">
               <motion.img
+                className="rounded-full object-cover"
                 variants={fadeIn("up", 0.2)}
                 initial={"hidden"}
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
                 src={avatar}
-                alt="A fun vector image depicting Giorgio Faini"
+                alt="A fun vector image depicting Angelo Balagtas"
               />
             </div>
           {/*text box*/}
@@ -36,7 +37,7 @@ const Hero = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
             >
-              Hi 👋, my name is
+               👋 Hi, my name is
             </motion.p>
             {/*name box*/}
             <motion.div
@@ -67,9 +68,9 @@ const Hero = () => {
               <div className=" text-neutral-800 text-[20px] font-semibold md:text-[24px] lg:text-3xl">
                 <Typewriter
                   words={[
-                    "Frontend Developer",
-                    "Game Developer",
-                    "Graphic Designer",
+                    "Fullstack Software Engineer",
+                    "Fullstack Web Developer",
+                    "Freelance Developer",
                   ]}
                   typeSpeed={50}
                   deleteSpeed={50}
