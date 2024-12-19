@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {Sling as Hamburger} from 'hamburger-react'
 import { NavLink, Link } from "react-router-dom";
-import { FaLinkedin, FaGithub, FaInstagram, FaItchIo } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import Logo from "../images/Logo.png";
 
 
@@ -71,17 +71,11 @@ const Header = () => {
             </Link>
           </ul>
           <div className="flex gap-5 text-slate-200">
-            <a href="https://github.com/Georgelafayen">
+            <a href="https://github.com/OlegAngelo">
               <FaGithub size={25} />
             </a>
-            <a href="https://www.linkedin.com/in/giorgiofaini/">
+            <a href="https://www.linkedin.com/in/nbalagtas/">
               <FaLinkedin size={25} />
-            </a>
-            <a href="https://www.instagram.com/georgelafayen/">
-              <FaInstagram size={25} />
-            </a>
-            <a href="https://lafayenbros.itch.io/">
-              <FaItchIo size={25} />
             </a>
           </div>
         </div>

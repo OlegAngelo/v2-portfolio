@@ -1,11 +1,12 @@
 import React from "react";
-import { motion } from "framer-motion";
+import Footer from "../components/Footer";
 import EmailForm from "../components/EmailForm";
 
 const Contacts = () => {
   return (
     <main>
         <EmailForm/>
+        <Footer />
     </main>
   );
 };

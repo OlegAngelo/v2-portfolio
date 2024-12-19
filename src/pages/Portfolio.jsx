@@ -1,14 +1,15 @@
 import React, {useEffect} from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/variants";
-import Multimedia from "../components/Multimedia";
-import ItchGames from "../components/ItchGames";
-import WebDev from "../components/WebDev"
-import GraphicDesign from "../components/GraphicDesign";
+// import Multimedia from "../components/Multimedia";
+// import ItchGames from "../components/ItchGames";
+// import WebDev from "../components/WebDev"
+// import GraphicDesign from "../components/GraphicDesign";
 import TextSpan from '../utils/textSpan';
 
 
 const Projects = () => {
+  const githubLink = <a className="underline text-[#7c7cb3]" href="https://github.com/OlegAngelo/">Github</a>;
   const name = "My projects.".split("");
 
   useEffect(() => {
@@ -34,10 +35,14 @@ const Projects = () => {
                 );
               })}
             </motion.div>
-            <WebDev />
+
+            {/* shit starts here */}
+            <div>Currently under maintenance. Adding new projects...</div>
+            <div>You can check out some of my projects in my {githubLink}.</div>
+            {/* <WebDev />
             <Multimedia />
             <ItchGames />
-            <GraphicDesign/>
+            <GraphicDesign/> */}
           
           </div>
         </section>

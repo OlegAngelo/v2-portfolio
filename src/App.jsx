@@ -18,7 +18,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contacts" element={<Contacts />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </AnimatePresence>
   );

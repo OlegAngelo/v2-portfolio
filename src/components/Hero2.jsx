@@ -12,7 +12,7 @@ const Hero2 = () => {
 
   return (
     <section>
-      <div className="flex flex-col items-center justify-center w-full min-h-screen text-neutral-800 ">
+      <div className="flex flex-col items-center justify-center w-full min-h-screen text-neutral-800">
         {/*container*/}
         <div className="grid items-center gap-4 md:gap-6 lg:gap-8 justify-items-center lg:grid-cols-2">
           {/*image*/}
