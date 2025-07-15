@@ -68,8 +68,8 @@ const Hero = () => {
               <div className=" text-neutral-800 text-[20px] font-semibold md:text-[24px] lg:text-3xl">
                 <Typewriter
                   words={[
-                    "Fullstack Software Engineer",
-                    "Fullstack Web Developer",
+                    "Software Engineer",
+                    "Fullstack Developer",
                     "Freelance Developer",
                   ]}
                   typeSpeed={50}
