@@ -6,7 +6,7 @@ import { fadeIn } from "../utils/variants";
 
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-const GraphicDesign = () => {
+const Embedded = () => {
   const config = {
     containerClassName: "",
     nextButtonClassName: "rounded-full",
@@ -21,7 +21,7 @@ const GraphicDesign = () => {
     <section>
         {/*Card container*/}
         <div className="grid gap-5 lg:grid-cols-3 max-w-[1500px] items-center">
-          {works.design.map((project, index) => {
+          {works.embedded.map((project, index) => {
             return (
               <motion.div
                 key={index}
@@ -37,6 +37,7 @@ const GraphicDesign = () => {
                     defaultControlsConfig={config}
                     wrapAround
                     autoplay
+                    autoplayInterval={9000}
                   >
                     {project.image.map((pic, index) => (
                       <div key={index} className="md:h-[300px] h-[200px] max-w-full ">
@@ -46,6 +47,7 @@ const GraphicDesign = () => {
                   </Carousel>
 
                   <p className="text-[20px] md:text-2xl font-bold ">{project.title}</p>
+                  <p>{project.description}</p>
                   <div className="flex flex-wrap items-center gap-2 text-sm">
                     <span className="font-semibold">Built with:</span>
                     <span className=" text-v">{project.stack}</span>
@@ -59,4 +61,4 @@ const GraphicDesign = () => {
   );
 };
 
-export default GraphicDesign;
+export default Embedded;

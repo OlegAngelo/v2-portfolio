@@ -109,7 +109,7 @@ const EmailForm = () => {
               >
                 {sending ? "Sending Message..." : "Send Message"}
               </button>
-              {sent && <p className="mt-2 text-green-500">Sent with succes!</p>}
+              {sent && <p className="mt-2 text-green-500">Sent with success!</p>}
               {error && (
                 <p className="mt-2 text-red-500">
                   Error sending message. Try later!

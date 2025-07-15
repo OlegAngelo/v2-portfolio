@@ -30,10 +30,12 @@ const WebDev = () => {
                 {/*title*/}
                 <a className="flex items-center gap-2 text-[20px] md:text-2xl font-bold">
                   <p>{project.title}</p>
-                  <FaExternalLinkAlt size={15} />
+                  {project.link.length > 0 && <FaExternalLinkAlt size={15} />}
                 </a>
+
                 {/*description*/}
                 <p>{project.description}</p>
+
                 {/*tech*/}
                 <div className="flex flex-wrap items-center gap-2 text-sm">
                   <span className="font-semibold">Built with:</span>
